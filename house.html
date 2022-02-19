@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/logo-ico.ico">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>House</title>
+</head>
+<body>
+    <header class="ms-4 me-4" >
+        <div class="d-flex justify-content-between align-items-center pe-3 expand-sm pt-2">
+            <img class="w-25 p-2" src="./assets/logo2.png" alt="logo">
+            <div class="fs-4">
+              <i class="fas fa-envelope"></i>
+              <a class="me-5 text-decoration-none" href="mailto"> info@tgif.net</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark bg-gradient text-white mt-2">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active  text-light fs-5" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Congress 113
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item " href="#">House</a></li>
+                      <li><a class="dropdown-item" href="senate.html">Senate</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Attendance
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item " href="attendance-house.html">House</a></li>
+                      <li><a class="dropdown-item" href="attendance-senate.html">Senate</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Loyalty
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item " href="party_loyalty_house.html">House</a></li>
+                      <li><a class="dropdown-item" href="party_loyalty_senate">Senate</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <article class="mt-5">
+           <div class="col-11 m-auto">
+              <h2>Congressmen</h2>
+              <p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
+              <p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative. </p>
+           </div>
+           <div class="row d-flex justify-content-evenly p-4">
+              <div class="dropdown col-sm-2" >
+                  <select id="dropdown"  class="btn-secondary form-select">
+                    <option selected value='All'>All STATES</option>
+                  </select>
+              </div>
+              <div class="form-check form-check-inline col-sm-2 fs-5">
+                  <input class="form-check-input" type="checkbox" name = 'party' id="inlineCheckbox1" value="D">
+                  <label class="form-check-label fw-bold " for="inlineCheckbox1">Democratic</label>
+              </div>
+              <div class="form-check form-check-inline col-sm-2 fs-5">
+                  <input class="form-check-input" type="checkbox" name= 'party' id="inlineCheckbox2" value="R">
+                  <label class="form-check-label fw-bold" for="inlineCheckbox2">Republican</label>
+              </div>
+              <div class="form-check form-check-inline col-sm-2 fs-5">
+                  <input class="form-check-input" type="checkbox" name = 'party' id="inlineCheckbox3" value="I">
+                  <label class="form-check-label fw-bold" for="inlineCheckbox3">Independent</label>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-11">
+              <table class="table table-dark table-striped filtro">
+                <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th class="text-center">Party</th>
+                        <th class="text-center">State</th>
+                        <th class="text-center">Seniority</th>
+                        <th class="text-center">% of votes with party</th>
+                      </tr>
+                </thead>
+                <tbody id="t-body">
+                    <tr>
+                      <td colspan="5">
+                        <div class="d-flex justify-content-center">
+                          <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>    
+    </article>
+</main>
+<footer class="border bg-light mt-5">
+    <p class="text-center m-2">© 2016 TGIF | All Rights Reserved</p>
+</footer>
+  
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"  ></script>
+        <script src="https://kit.fontawesome.com/be6f6f9a32.js"></script>
+        <script src="./js/main.js"></script>
+
+</body>
+</html>
