@@ -2,7 +2,7 @@
 Webpage for the Transparent Government in Fact (TGIF).
 The webpage is in English.
 
-![Tgif.png](https://i.postimg.cc/xTbtJFBK/Tgif.png)
+[![Tgif.png](https://i.postimg.cc/xTbtJFBK/Tgif.png)](https://tgif-transparent-goverment.netlify.app/)
 
 ## Link: [TGIF](https://tgif-transparent-goverment.netlify.app/)
 ## 💻 Technologies used:
