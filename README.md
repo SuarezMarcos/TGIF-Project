@@ -8,7 +8,6 @@ The webpage is in English.
 ## 💻 Technologies used:
 
 - [x] HTML5
-- [x] CSS3
 - [x] Bootstrap
 - [x] JavaScript
 - [x] API: ProPublica Congress API
